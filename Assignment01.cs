@@ -17,6 +17,8 @@ public class Assignment01 : Game
     private bool isMovingLeft = false;
     private bool isConfused = false;
     private bool isMovingUp = false;
+    private float _x, _y;
+
 
 
     public Assignment01()
@@ -78,6 +80,14 @@ public class Assignment01 : Game
             _animation03.Update(gameTime);
             isMovingUp = true;
         }
+        else 
+        {
+            isMovingUp = false;
+        }
+        if(kbCurrentState.IsKeyDown(Keys.Down))
+        {
+            _animation01.Update(gameTime);
+        }
     
         //Play the animation
         if(kbCurrentState.IsKeyDown(Keys.Space))
@@ -88,6 +98,7 @@ public class Assignment01 : Game
         else
         {
             isConfused = false;
+            
         }
         
 
@@ -104,14 +115,16 @@ public class Assignment01 : Game
 
 
        
-
-        if (isMovingLeft == true){
+        if(isMovingUp == true){
+            _animation03.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.None);
+        }
+        else if (isMovingLeft == true){
             _animation01.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.FlipHorizontally);
         }
         else {
              _animation01.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.None);
         }
-
+       
         if (isConfused == true){
             _animation02.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight - (_birds.CelHeight /2) ), SpriteEffects.None);
         }
