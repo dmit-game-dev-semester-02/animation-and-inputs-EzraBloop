@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/Birds.png</File>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/MarioWalk.png</File>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/MarioWalkBehind.png</File>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/SaveBlock.png</File>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/WiseWisterwood.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
