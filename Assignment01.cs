@@ -17,7 +17,8 @@ public class Assignment01 : Game
     private bool isMovingLeft = false;
     private bool isConfused = false;
     private bool isMovingUp = false;
-    private float _x, _y;
+    private float _x = 0, _y = 811;
+    private float _speedX = 2, _speedY = 2;
 
 
 
@@ -69,16 +70,19 @@ public class Assignment01 : Game
         {
              _animation01.Update(gameTime);
              isMovingLeft = false;
+             _x += _speedX;
         }
         if(kbCurrentState.IsKeyDown(Keys.Left))
         {
             _animation01.Update(gameTime);
             isMovingLeft = true;
+            _x -= _speedX;
         }
         if(kbCurrentState.IsKeyDown(Keys.Up))
         {
             _animation03.Update(gameTime);
             isMovingUp = true;
+            _y -= _speedY;
         }
         else 
         {
@@ -87,6 +91,7 @@ public class Assignment01 : Game
         if(kbCurrentState.IsKeyDown(Keys.Down))
         {
             _animation01.Update(gameTime);
+            _y += _speedY;
         }
     
         //Play the animation
@@ -98,7 +103,6 @@ public class Assignment01 : Game
         else
         {
             isConfused = false;
-            
         }
         
 
@@ -116,17 +120,17 @@ public class Assignment01 : Game
 
        
         if(isMovingUp == true){
-            _animation03.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.None);
+            _animation03.Draw(_spriteBatch, new Vector2(_x, _y - _marioWalk.CelHeight), SpriteEffects.None);
         }
         else if (isMovingLeft == true){
-            _animation01.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.FlipHorizontally);
+            _animation01.Draw(_spriteBatch, new Vector2(_x, _y - _marioWalk.CelHeight), SpriteEffects.FlipHorizontally);
         }
         else {
-             _animation01.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight), SpriteEffects.None);
+             _animation01.Draw(_spriteBatch, new Vector2(_x, _y - _marioWalk.CelHeight), SpriteEffects.None);
         }
        
         if (isConfused == true){
-            _animation02.Draw(_spriteBatch, new Vector2(0, 811 - _marioWalk.CelHeight - (_birds.CelHeight /2) ), SpriteEffects.None);
+            _animation02.Draw(_spriteBatch, new Vector2(_x, _y - _marioWalk.CelHeight - (_birds.CelHeight /2) ), SpriteEffects.None);
         }
         
 
