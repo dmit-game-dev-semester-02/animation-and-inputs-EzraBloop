@@ -5,12 +5,14 @@
   <Config />
   <SourceFiles>
     <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/Birds.png</File>
+    <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/MarioMulti.png</File>
     <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/MarioWalk.png</File>
     <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/MarioWalkBehind.png</File>
     <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/SaveBlock.png</File>
     <File>C:/School work/Term2/Game Programming Essentials - 1514/Assignment-01/animation-and-inputs-EzraBloop/Content/WiseWisterwood.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -29,3 +29,4 @@ C:\School work\Term2\Game Programming Essentials - 1514\Assignment-01\animation-
 C:\School work\Term2\Game Programming Essentials - 1514\Assignment-01\animation-and-inputs-EzraBloop\bin\Debug\net8.0\Content\SaveBlock.xnb
 C:\School work\Term2\Game Programming Essentials - 1514\Assignment-01\animation-and-inputs-EzraBloop\bin\Debug\net8.0\Content\WiseWisterwood.xnb
 C:\School work\Term2\Game Programming Essentials - 1514\Assignment-01\animation-and-inputs-EzraBloop\bin\Debug\net8.0\Content\Birds.xnb
+C:\School work\Term2\Game Programming Essentials - 1514\Assignment-01\animation-and-inputs-EzraBloop\bin\Debug\net8.0\Content\MarioMulti.xnb
